@@ -1,5 +1,14 @@
 package tools;
 
+/**
+ * @ Author: JunkJumper
+ * @ Link: https://github.com/JunkJumper
+ * @ Copyright: Creative Common 4.0 (CC BY 4.0)
+ * @ Create Time: 09-11-2020
+ * @ Modified by: JunkJumper
+ * @ Modified time: 09-11-2020
+ */
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -15,7 +24,7 @@ public class LinksGetter {
 	private final static String MAIN_URL = "https://mlp.fandom.com/wiki/List_of_ponies";
 	private final static String WEBSITE_URL = "https://mlp.fandom.com";
 	
-	  public static void main(String[] args) throws IOException {
+	  public static void getLinks() throws IOException {
 		  File links = new File("./export/links.txt");
 		  links.createNewFile();
 		  write(getTxtListFile());
@@ -42,7 +51,7 @@ public class LinksGetter {
 		  return ul;
 	  }
 	  
-	private static List<String> parseList(Elements e) {
+	  private static List<String> parseList(Elements e) {
 		  List<String> l = new ArrayList<>();
 		  String[] current = {""};		  
 		  

@@ -1,4 +1,4 @@
-package pony;
+import java.io.IOException;
 
 /**
  * @ Author: JunkJumper
@@ -10,8 +10,10 @@ package pony;
  */
 
 
-public class PonyParser {
-    
-    
-    
+public class Start {
+
+	public static void main(String[] args) throws IOException {
+		tools.LinksGetter.getLinks();
+	}
+	
 }
